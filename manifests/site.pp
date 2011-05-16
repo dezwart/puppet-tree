@@ -1,9 +1,12 @@
 import 'nodes/*.pp'
 
 File {
-	ignore => ['.svn', '.git', 'CVS']
+	mode   => '0644',
+	owner  => 'root',
+	group  => 'root',
+	ignore => ['.svn', '.git', 'CVS'],
 }
 
 node default {
-	notice('No node definition found for ${fqdn}.')
+	fail('No node definition found for ${fqdn}.')
 }
