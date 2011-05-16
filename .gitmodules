@@ -1,0 +1,3 @@
+[submodule "modules/squid"]
+	path = modules/squid
+	url = git@github.com:dezwart/puppet-squid.git
