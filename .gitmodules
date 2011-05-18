@@ -7,3 +7,6 @@
 [submodule "modules/bind"]
 	path = modules/bind
 	url = git@github.com:dezwart/puppet-bind.git
+[submodule "modules/resolv"]
+	path = modules/resolv
+	url = git@github.com:dezwart/puppet-resolv.git
