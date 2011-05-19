@@ -10,3 +10,6 @@
 [submodule "modules/resolv"]
 	path = modules/resolv
 	url = git@github.com:dezwart/puppet-resolv.git
+[submodule "modules/rsyslog"]
+	path = modules/rsyslog
+	url = git@github.com:dezwart/puppet-rsyslog.git
