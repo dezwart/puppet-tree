@@ -20,6 +20,8 @@ By the power of trimethylxanthine!
 But I wants a node!
 -------------------
 
+Here is a sample node that uses most of the sub-modules.
+
     node 'host.domain' {
         $default_domain_name = 'domain'
         $dynamic_dns_key = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa='
@@ -76,5 +78,8 @@ But I wants a node!
             dynamic_dns_forward_zone    => "$default_domain_name",
             dynamic_dns_reverse_zone    => "$dynamic_dns_reverse_zone",
             dynamic_dns_ns_master       => 'localhost',
+        }
+
+        class { 'arpwatch':
         }
     }
