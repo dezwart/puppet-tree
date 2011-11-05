@@ -5,7 +5,7 @@ Git sub-module organised puppet tree.
 
 Designed for use within a home office environment, where environment is a single server running Debian 6 "Lenny".
 
-This tree and sub-modules is an experiment with Puppet using git as the VCS.
+This tree and sub-modules are an experiment with Puppet using git as the VCS.
 
 But how?
 --------
