@@ -19,3 +19,6 @@
 [submodule "modules/isc-dhcp"]
 	path = modules/isc-dhcp
 	url = git@github.com:dezwart/puppet-isc-dhcp.git
+[submodule "modules/arpwatch"]
+	path = modules/arpwatch
+	url = git@github.com:dezwart/puppet-arpwatch.git
