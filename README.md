@@ -82,4 +82,7 @@ Here is a sample node that uses most of the sub-modules.
 
         class { 'arpwatch':
         }
+
+        class { 'tftpd':
+        }
     }
