@@ -22,3 +22,6 @@
 [submodule "modules/arpwatch"]
 	path = modules/arpwatch
 	url = git@github.com:dezwart/puppet-arpwatch.git
+[submodule "modules/tftpd"]
+	path = modules/tftpd
+	url = git@github.com:dezwart/puppet-tftpd.git
