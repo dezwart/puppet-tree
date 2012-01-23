@@ -25,3 +25,6 @@
 [submodule "modules/tftpd"]
 	path = modules/tftpd
 	url = git@github.com:dezwart/puppet-tftpd.git
+[submodule "modules/daemontools"]
+	path = modules/daemontools
+	url = git@github.com:dezwart/puppet-daemontools.git
