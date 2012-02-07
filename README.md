@@ -37,6 +37,7 @@ Here is a sample node that uses most of the sub-modules.
             cache_swap_high             => 100,
             cachemgr_passwd             => 'XXXXXXXX',
             log_fqdn                    => 'on',
+            snmp_port                   => 3401,
         }
 
         class { 'apt':
