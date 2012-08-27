@@ -16,12 +16,12 @@
 [submodule "modules/ntp"]
 	path = modules/ntp
 	url = git@github.com:dezwart/puppet-ntp.git
-[submodule "modules/isc-dhcp"]
-	path = modules/isc-dhcp
-	url = git@github.com:dezwart/puppet-isc-dhcp.git
 [submodule "modules/arpwatch"]
 	path = modules/arpwatch
 	url = git@github.com:dezwart/puppet-arpwatch.git
 [submodule "modules/tftpd"]
 	path = modules/tftpd
 	url = git@github.com:dezwart/puppet-tftpd.git
+[submodule "modules/isc_dhcp"]
+	path = modules/isc_dhcp
+	url = git@github.com:dezwart/puppet-isc-dhcp.git
