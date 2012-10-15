@@ -8,5 +8,5 @@ File {
 }
 
 node default {
-    fail('No node definition found for ${fqdn}.')
+    fail("No node definition found for ${fqdn}.")
 }
