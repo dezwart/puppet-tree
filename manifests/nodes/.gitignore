@@ -1,2 +1,0 @@
-# Ignore all .pp files to allow for the definition of unmanaged puppet nodes.
-*.pp
