@@ -20,6 +20,12 @@ node 'asgard.noviomagus.dezwart.net.au' {
     ensure  => installed,
   }
 
+  $uninstall_packages = [ 'nano' ]
+
+  package { $uninstall_packages:
+    ensure  => purged,
+  }
+
   $install_gems = [ 'puppet-lint',
     'rake' ]
 
