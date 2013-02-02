@@ -13,10 +13,19 @@ node 'asgard.noviomagus.dezwart.net.au' {
     'collectd',
     'smokeping',
     'squid-cgi',
-    'exim4' ]
+    'exim4',
+    'rubygems' ]
 
   package { $install_packages:
     ensure  => installed,
+  }
+
+  $install_gems = [ 'puppet-lint',
+    'rake' ]
+
+  package { $install_gems:
+    ensure    => installed,
+    provider  => gem,
   }
 
   $default_domain_name = 'noviomagus.dezwart.net.au'
@@ -46,13 +55,14 @@ node 'asgard.noviomagus.dezwart.net.au' {
   }
 
   bind::zone { $default_domain_name:
-    serial                => '2012120401',
+    serial                => '2013020201',
     refresh               => 300,
     failed_refresh_retry  => 300,
     expire                => 300,
     minimum               => 300,
     ttl                   => 300,
-    records               => ["network\tIN\tA\t192.168.1.0",
+    records               => ["@\tIN\tNS\t${fqdn}.",
+      "network\tIN\tA\t192.168.1.0",
       "yggdrasil\tIN\tA\t192.168.1.1",
       "gateway\tIN\tCNAME\tyggdrasil",
       "asgard\tIN\tA\t192.168.1.254",
@@ -130,13 +140,14 @@ node 'asgard.noviomagus.dezwart.net.au' {
   }
 
   bind::zone { '1.168.192.in-addr.arpa':
-    serial                => '2012120401',
+    serial                => '2013020201',
     refresh               => 300,
     failed_refresh_retry  => 300,
     expire                => 300,
     minimum               => 300,
     ttl                   => 300,
-    records               => ["0\tIN\tPTR\tnetwork.noviomagus.dezwart.net.au.",
+    records               => ["@\tIN\tNS\t${fqdn}.",
+      "0\tIN\tPTR\tnetwork.noviomagus.dezwart.net.au.",
       "1\tIN\tPTR\tyggdrasil.noviomagus.dezwart.net.au.",
       "2\tIN\tPTR\tbifrost.noviomagus.dezwart.net.au.",
       "3\tIN\tPTR\thelheim.noviomagus.dezwart.net.au.",
