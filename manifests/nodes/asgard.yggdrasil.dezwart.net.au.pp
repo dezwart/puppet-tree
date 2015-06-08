@@ -10,6 +10,7 @@ node 'asgard.yggdrasil.dezwart.net.au' {
     'git',
     'puppet',
     'sudo',
+    'sysstat',
     ]
 
   package { $install_packages:
